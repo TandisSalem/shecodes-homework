@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Aurelius</title>
+</head>
+<style>
+    body {
+        background: rgb(213, 231, 250) 0.1%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(4, 78, 116);
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+        text-align: center;
+        margin: 20px auto;
+        background: rgb(213, 231, 250);
+        padding: 20px 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        color: rgb(4, 78, 116);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: larger;
+        text-align: justify;
+        color: rgb(1, 48, 71);
+
+
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        background: rgb(213, 231, 250);
+        border: none;
+        font-size: 20px;
+        color: rgb(1, 48, 71);
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 20px auto;
+        background: linear-gradient(111.5deg,
+                rgb(187, 232, 255) 11.1%,
+                rgb(4, 78, 116) 107.5%);
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+
+    }
+
+    .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: rgb(213, 231, 250);
+        font-size: larger;
+
+
+    }
+
+    .learn-more:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        text-align: center;
+        color: rgb(1, 48, 71);
+    }
+
+    .my-link {
+        text-decoration: none;
+        color: rgb(1, 48, 71);
+    }
+
+    .my-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>
+            Marcus Aurelius
+        </h1>
+        <h2>
+            "You have power over your mind - not outside events.
+            <br />
+            Realize this, and you will find strength."
+
+        </h2>
+        <img src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/089/original/marcusaurelius.jpeg?1661948807
+            alt="Marcus Aurelius" />
+        <p>
+            Marcus Aurelius was a Roman emperor, born nearly two millennia ago (121 – 180). Marcus became the Emperor of
+            the Roman Empire in 161 and ruled for nearly two decades until his death in 180. It is important to realize
+            the gravity of that position and the magnitude of power that Marcus possessed. He held one of—if not the
+            most—powerful positions in the world at the time. If he chose to, nothing would be off limits. There is a
+            reason the adage that power in absolute absolutely corrupts has been repeated throughout history—it
+            unfortunately tends to be true. And yet, as the essayist Matthew Arnold remarked, Marcus proved himself
+            worthy of the position he was in.
+            <br />
+            Marcus has only one core work, which was actually never intended for publication: his Meditations
+            (originally titled “To Himself”). This is not only one of greatest books ever written but perhaps the only
+            book of its kind. It is the definitive text on self-discipline, personal ethics, humility,
+            self-actualization and strength.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Marcus_Aurelius" target="_blank" class="learn-more">
+            👉 Learn more about Marcus Aurelius in wikipedia
+        </a>
+        <button>
+            Buy The Meditations By Marcus Aurelius
+        </button>
+        <p class="footer">
+            This page was built by
+            <a href="https://tandissalem.github.io/" target="_blank" class="my-link"> Tandis Salem
+            </a>
+        </p>
+    </div>
+    <script>
+        function buy() {
+            let name = prompt("What is your name ?");
+            let email = prompt("What is your email address ?");
+            if (name.length > 0) {
+                alert("Thank you " + name + "! We'll be in touch by email 😁")
+            }
+        }
+        let button = document.querySelector("button")
+        button.addEventListener("click", buy)
+    </script>
+</body>
+
+</html>
